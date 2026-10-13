@@ -1,0 +1,44 @@
+site_name: 부정클릭 모니터링 메뉴얼
+site_description: 부정클릭 모니터링 사용 메뉴얼
+docs_dir: docs
+use_directory_urls: true
+
+theme:
+  name: material
+  language: ko
+  custom_dir: overrides
+  features:
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: 다크 모드로 전환
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 라이트 모드로 전환
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - def_list
+  - toc:
+      permalink: true
+
+nav:
+  - 시작하기: index.md
+  - 모니터링 설정: setup.md
+  - 모니터링: monitoring.md
+  - IP 차단 목록: ip-block.md
+  - 경고창 예시: warning-examples.md
+  - 모니터링 항목: fields.md
+  - 유입경로 분석: traffic-analysis.md
